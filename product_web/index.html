@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShineX Car Wash</title>
+  <meta name="description" content="Premium car wash & detailing. Book on WhatsApp in one tap." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Spline Web Component -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.49/build/spline-viewer.js">
+
+
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand"><span class=""></span></div>
+      <div class="menu">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#book">Book</a>
+        <button class="cta" id="waCtaTop">WhatsApp Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Mobile & in‑bay</div>
+        <h1 class="title">ShineX Car Wash</h1>
+        <h1>Premium Car Wash & Detailing<br/> Delivered On Your Schedule</h1>
+        <p class="lead">Eco‑friendly products, trained detailers, zero swirl policy. Get a showroom finish in under an hour. Book on WhatsApp in one tap.</p>
+        <div class="hero-cta">
+          <button class="btn primary" id="bookNow">Book on WhatsApp</button>
+          <a class="btn" href="#services">See services</a>
+        </div>
+      </div>
+      <section id="spline" class="content-section">
+        <section id="sline" class="content-section">
+          <iframe src='https://my.spline.design/carastonmartinanimation-F8rgEC7r39PeV15Cx31MrzM9/' frameborder='0' width='100%' height='100%'></iframe>
+  
+          </div>
+      </section>
+      </section>
+      
+
+
+
+
+
+
+
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="grid services">
+        <article class="card">
+          <span class="badge">Best seller</span>
+          <h3>Express Wash</h3>
+          <p class="muted">Snow foam pre‑wash, 2‑bucket hand wash, wheel & tire clean, dry & tire shine.</p>
+          <p class="price">₹499</p>
+        </article>
+        <article class="card">
+          <h3>Interior Refresh</h3>
+          <p class="muted">Vacuum, interior wipe‑down, window & mirror clean, deodorize.</p>
+          <p class="price">₹699</p>
+        </article>
+        <article class="card">
+          <h3>Full Detail</h3>
+          <p class="muted">Exterior + interior, clay treatment, wax/sealant, engine bay cosmetic clean.</p>
+          <p class="price">₹1,999</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <h2 class="section-title">Memberships</h2>
+      <div class="grid pricing">
+        <article class="card">
+          <h3>Basic</h3>
+          <p class="muted">2 Express Wash / month</p>
+          <p class="price">₹799 / mo</p>
+          <button class="btn" data-plan="Basic">Choose</button>
+        </article>
+        <article class="card">
+          <span class="badge">Save 20%</span>
+          <h3>Plus</h3>
+          <p class="muted">4 Express + 1 Interior</p>
+          <p class="price">₹1,899 / mo</p>
+          <button class="btn" data-plan="Plus">Choose</button>
+        </article>
+        <article class="card">
+          <h3>Pro</h3>
+          <p class="muted">Unlimited Express (fair use)</p>
+          <p class="price">₹2,999 / mo</p>
+          <button class="btn" data-plan="Pro">Choose</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <div class="container">
+      <h2 class="section-title">Book on WhatsApp</h2>
+      <div class="grid booking-grid">
+        <div class="card">
+          <h3>Instant Booking</h3>
+          <p class="muted">Fill your details and we’ll open WhatsApp with a pre‑filled message. Just hit <strong>Send</strong>.</p>
+          <form id="bookingForm">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" placeholder="Full name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" placeholder="9XXXXXXXXX" inputmode="numeric" />
+            </div>
+            <div>
+              <label for="car">Car Model</label>
+              <input id="car" placeholder="e.g., Swift 2021" required />
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select id="service">
+                <option>Express Wash</option>
+                <option>Interior Refresh</option>
+                <option>Full Detail</option>
+              </select>
+            </div>
+            <div style="display:flex; gap:12px">
+              <div style="flex:1">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" required />
+              </div>
+              <div style="flex:1">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required />
+              </div>
+            </div>
+            <div>
+              <label for="pickup">Pickup & Drop</label>
+              <select id="pickup">
+                <option>Not needed</option>
+                <option>Needed</option>
+              </select>
+            </div>
+            <div>
+              <label for="note">Notes</label>
+              <textarea id="note" placeholder="Anything we should know?"></textarea>
+              <p class="help">By continuing you’ll be redirected to WhatsApp.</p>
+            </div>
+            <button class="cta" type="submit">Open WhatsApp</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Location & Hours</h3>
+          <p class="muted">ShineX Detailing Studio, Indiranagar, Bengaluru</p>
+          <p class="muted">Mon–Sun · 8:00–20:00 IST</p>
+          <div style="height:260px; border-radius:12px; overflow:hidden; margin-top:12px">
+            <iframe title="map" width="100%" height="100%" style="border:0; filter:grayscale(100%) contrast(110%) opacity(.9)" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1946.043!2d77.640!3d12.971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sin!4v1680000000000"></iframe>
+          </div>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" id="waTemplate1">Quick: Price List</a>
+            <a class="btn" id="waTemplate2">Quick: Nearest Slot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> ShineX Detailing. All rights reserved.</p>
+      <p><small>Built with HTML, CSS, and Spline. WhatsApp click‑to‑chat enabled.</small></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp FAB -->
+  <a class="wa-fab" id="waFab" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M19.11 17.47c-.27-.14-1.56-.77-1.8-.86-.24-.09-.42-.14-.6.14-.18.27-.69.86-.84 1.03-.16.18-.31.2-.58.07-.27-.14-1.15-.42-2.19-1.33-.81-.72-1.36-1.6-1.52-1.87-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.45-.6-.45h-.51c-.18 0-.48.07-.73.34-.24.27-.96.94-.96 2.3s.98 2.67 1.12 2.85c.14.18 1.92 2.93 4.65 4.12.65.28 1.16.45 1.56.57.66.21 1.26.18 1.73.11.53-.08 1.56-.64 1.78-1.27.22-.63.22-1.17.16-1.27-.07-.11-.25-.18-.53-.32z"/>
+      <path d="M27.2 4.8C24.32 1.92 20.48.32 16.48.32 8.38.32 1.84 6.86 1.84 14.96c0 2.51.66 4.97 1.92 7.15L.8 31.68l9.77-2.56c2.1 1.15 4.47 1.76 6.9 1.76 8.1 0 14.64-6.53 14.64-14.64 0-3.99-1.6-7.84-4.5-10.72zm-10.72 23.8c-2.3 0-4.55-.62-6.52-1.78l-.47-.28-5.8 1.52 1.55-5.65-.3-.49c-1.2-1.99-1.84-4.28-1.84-6.62 0-7.08 5.76-12.84 12.84-12.84 3.43 0 6.65 1.34 9.07 3.76 2.42 2.42 3.76 5.64 3.76 9.07 0 7.08-5.76 12.84-12.84 12.84z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
